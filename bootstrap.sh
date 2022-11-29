@@ -20,8 +20,9 @@ transfer_data(){
     cd ccil_vwd
     mkdir -p anon_dataset/experiment1/all_data/raw
     mkdir -p unanon_dataset/experiment1/all_data/raw
+	mv ../cohort-description.csv unanon_dataset/
     source activate ards
-    python transfer_data.py --data-path dataset/experiment1/all_data/raw/ --cohort-description dataset/cohort-description.csv
+    python transfer_data.py --data-path unanon_dataset/experiment1/all_data/raw/ --cohort-description unanon_dataset/cohort-description.csv
     echo "transferring data finished !!"
 }
 
