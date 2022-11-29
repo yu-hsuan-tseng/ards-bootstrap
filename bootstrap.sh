@@ -16,9 +16,10 @@ clone_ventmap(){
 }
 
 transfer_data(){
-    mkdir -p ccil_vwd/dataset/experiment1/all_data/raw
     echo "transferring data from database ..."
     cd ccil_vwd
+    mkdir -p anon_dataset/experiment1/all_data/raw
+	mkdir -p unanon_dataset/experiment1/all_data/raw
     source activate ards
     python transfer_data.py --data-path dataset/experiment1/all_data/raw/ --cohort-description dataset/cohort-description.csv
     echo "transferring data finished !!"
