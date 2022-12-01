@@ -22,6 +22,7 @@ transfer_data(){
     mkdir -p unanon_dataset/experiment1/all_data/raw
     mv ../cohort-description.csv unanon_dataset/
     source activate ards
+    # TODO add sudo handling to avoid password request
     python transfer_data.py --data-path unanon_dataset/experiment1/all_data/raw/ --cohort-description unanon_dataset/cohort-description.csv
     echo "transferring data finished !!"
 }
