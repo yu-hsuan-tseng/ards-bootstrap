@@ -16,3 +16,5 @@ file should be named as `cohort-description.csv`
 
 ## Run bootstrap
 `sh bootstrap.sh` 
+
+Note: You are very likely to face an issue where terminal keep asking you for password. I will address this issue in the future.
