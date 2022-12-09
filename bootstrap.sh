@@ -1,7 +1,7 @@
 #!/bin/sh
 # Bootstrap will clone all the repository needed for you 
 
-echo "Start bootstrap ..."
+echo "Start ards bootstrap ..."
 
 clone_ccil(){
     # TODO ccil_vwd is a private repository, we might need to pre-configure your git to fullfill that
@@ -23,7 +23,6 @@ transfer_data(){
     mkdir -p unanon_dataset/experiment1/all_data/raw
     mv ../cohort-description.csv unanon_dataset/
     source activate ards
-    # TODO add sudo handling to avoid password request
     python transfer_data.py --data-path unanon_dataset/experiment1/all_data/raw/ --cohort-description unanon_dataset/cohort-description.csv
     echo "transferring data finished !!"
 }
