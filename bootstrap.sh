@@ -29,8 +29,7 @@ transfer_data(){
 }
 
 anonymize_data(){
-    #TODO Combine anonymize_data.sh in here
-    echo "Please specify your data path in ventMAP/default.yaml"
+    echo "Please specify your data path in ventMAP/default.yaml if needed !!"
     cd ../ventMAP 
     sh anonymize_data.sh 
 }
@@ -38,6 +37,6 @@ anonymize_data(){
 clone_ccil
 clone_ventmap
 transfer_data
-# anonymize_data
+anonymize_data
 
 echo "Boostrap finished !!"
