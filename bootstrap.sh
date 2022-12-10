@@ -4,7 +4,7 @@
 echo "Start ards bootstrap ..."
 
 clone_ccil(){
-    # TODO ccil_vwd is a private repository, we might need to pre-configure your git to fullfill that
+    # TODO ccil_vwd is a private repository, we might need to pre-configure your git to fulfill that
     echo "cloning ccil_vwd ..." 
     git clone git@github.com:jyadams/ccil_vwd.git
     echo "ccil_vwd download finished !!"
