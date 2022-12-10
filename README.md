@@ -1,7 +1,7 @@
 # ards-bootstrap
 
 ## Introduction
-`ards-bootstrap` is to kickoff ards project
+`ards-bootstrap` is to kickoff ards project. By default, you will get unanonymized dataset after your run `ards-bootstrap`
 
 ## Prerequisite
 Remember to put cohort-description.csv to this repository before you run shellscript
