@@ -1,12 +1,19 @@
 # ards-bootstrap
 
 ## Introduction
-`ards-bootstrap` is to kickoff ards project
+`ards-bootstrap` is to kickoff ards project. By default, you will get unanonymized dataset after your run `ards-bootstrap`
 
 ## Prerequisite
 Remember to put cohort-description.csv to this repository before you run shellscript
 
 file should be named as `cohort-description.csv`
+
+Moreover, we are cloning private repository. Please add your `ssh key` to Github UI. 
+
+`ssh-keygen`
+
+`cat ~/.ssh/id_rsa.pub`
+
 
 | Patient Unique Identifier | Date when Berlin criteria first met (m/dd/yyyy) | vent_start_time  | experiment_group | Pathophysiology | Potential Enrollment  
 | :---:| :---: | :---: | :---: | :---: | :---: 
