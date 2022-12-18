@@ -6,7 +6,7 @@
 ## Prerequisite
 Remember to put cohort-description.csv to this repository before you run shellscript
 
-file should be named as `cohort-description.csv`
+file should be named as `cohort-description.csv` and store it in ards-bootstrap directory `./`
 
 Moreover, we are cloning private repository. Please add your `ssh key` to Github UI. 
 

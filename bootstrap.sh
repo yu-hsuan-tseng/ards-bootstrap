@@ -3,6 +3,7 @@
 
 echo "Start ards bootstrap ..."
 
+# Clone ccil_vwd repo to run transfer_data.py
 clone_ccil(){
     # TODO ccil_vwd is a private repository, we might need to pre-configure your git to fulfill that
     echo "cloning ccil_vwd ..." 
@@ -11,12 +12,14 @@ clone_ccil(){
     echo "ccil_vwd download finished !!"
 }
 
+# Clone ventMap software to run data preprocessing
 clone_ventmap(){
     echo "cloning ventMAP ..." 
     git clone git@github.com:yu-hsuan-tseng/ventMAP.git
     echo "ventMAP download finished !!"
 }
 
+# Transfer data from server to local
 transfer_data(){
     echo "transferring data from database ..."
     cd ccil_vwd
