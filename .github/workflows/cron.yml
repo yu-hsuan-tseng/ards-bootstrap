@@ -1,14 +1,12 @@
-name: Main test
+name: Trigger Action on a CRON Schedule
 
 on:
   schedule:
-    - cron: '23 * * * *'
+    - cron: '27 * * * 1-5'
+    
 jobs:
   build:
-    name: Test
+    name: Trigger Code Checkout
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test
-        run: echo "seting up..."
-  
