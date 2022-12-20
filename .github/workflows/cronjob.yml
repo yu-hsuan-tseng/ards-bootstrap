@@ -1,13 +1,16 @@
-name: Run CRON Schedule
+name: Run cron job
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 17 * * *"
+  pull_request:
     
 jobs:
   build:
-    name: Trigger Code Checkout
+    name: Shell script syntax test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: validate shell script syntax
+        run: |
+          sh -n bootstrap.sh
+          echo "shell script check finished !"
