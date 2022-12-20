@@ -2,9 +2,9 @@ name: Setup
 
 on: 
   pull_request:
-  workflow_dispatch:
-  schedule:
-    - cron: '20 * * * *'
+  #workflow_dispatch:
+  #schedule:
+    #- cron: '20 * * * *'
 jobs:
   build:
     name: setup test
