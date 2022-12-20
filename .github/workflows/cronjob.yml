@@ -2,7 +2,7 @@ name: Trigger Action on a CRON Schedule
 
 on:
   schedule:
-    - cron: "/5 * * * *"
+    - cron: '45 * * * *'
     
 jobs:
   build:
