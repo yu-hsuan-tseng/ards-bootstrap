@@ -1,0 +1,14 @@
+name: Setup
+
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: '5 1 * * *'
+jobs:
+  build:
+    name: setup test
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: |
+          echo "testing"
