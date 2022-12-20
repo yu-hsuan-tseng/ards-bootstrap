@@ -24,4 +24,6 @@ Moreover, we are cloning private repository. Please add your `ssh key` to Github
 ## Run bootstrap
 `sh bootstrap.sh` 
 
-Note: You are very likely to face an issue where terminal keep asking you for password. I will address this issue in the future.
+## Automatically run shell script syntax check
+
+In `github workflow`, we will run syntax script check everytime you commit to your pull_request
