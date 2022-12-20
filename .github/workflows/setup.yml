@@ -1,9 +1,9 @@
 name: Setup
 
 on: 
-  workflow_dispatch:
+  #workflow_dispatch:
   schedule:
-    - cron: '11 * * * *'
+    - cron: '14 * * * *'
 jobs:
   build:
     name: setup test
