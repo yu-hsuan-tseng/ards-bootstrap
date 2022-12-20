@@ -1,0 +1,12 @@
+name: Main test
+
+on:
+  schedule:
+    - cron: '20 * * * *'
+jobs:
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "seting up..."
