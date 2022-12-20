@@ -1,15 +1,15 @@
-name: Setup
+# .github/workflows/scheduled-builds.yml
+name: Trigger on a CRON Schedule
 
-on: 
-  #pull_request:
-  #workflow_dispatch:
+on:
   schedule:
-    - cron: '55 * * * *'
+    # Runs "at minute 55 past every hour" (see https://crontab.guru)
+    - cron: '6 * * * *'
 jobs:
   build:
-    name: setup test
+    name: Trigger Site Rebuild
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        run: |
-          echo "testing"
+      - name: cURL request
+        # Hit the webhook endpoint to rebuild  from the "main" branch
+        run: curl -X POST -d {} https://<webhook-endpoint-url>
