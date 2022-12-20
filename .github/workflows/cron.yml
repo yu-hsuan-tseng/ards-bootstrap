@@ -2,11 +2,13 @@ name: Main test
 
 on:
   schedule:
-    - cron: '20 * * * *'
+    - cron: '25 * * * *'
 jobs:
   build:
     name: Test
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: test
         run: echo "seting up..."
+  
