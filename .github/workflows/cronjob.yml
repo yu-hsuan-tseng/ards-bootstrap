@@ -1,4 +1,4 @@
-name: Trigger Action on a CRON Schedule
+name: Run CRON Schedule
 
 on:
   schedule:
