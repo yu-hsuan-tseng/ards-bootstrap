@@ -2,6 +2,7 @@
 # Bootstrap will clone all the repository needed for you 
 
 echo "Start ards bootstrap ..."
+#TODO more simplify processing
 
 # Clone ccil_vwd repo to run transfer_data.py
 clone_ccil(){
