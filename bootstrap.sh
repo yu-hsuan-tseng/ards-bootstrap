@@ -42,6 +42,9 @@ transfer_data(){
     mv ../cohort-description.csv unanon_dataset/
     source activate ards
     python transfer_data.py --data-path unanon_dataset/experiment1/all_data/raw/ --cohort-description unanon_dataset/cohort-description.csv
+    # Due to phi, we cannot keep the unanonymized dataset
+    rm -rf unanon_dataset/
+
     echo "transferring data finished !!"
 }
 
