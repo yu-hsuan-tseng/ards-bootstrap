@@ -51,7 +51,7 @@ transfer_data(){
 anonymize_data(){
     echo "Please specify your data path in ventMAP/default.yaml if needed !!"
     cd ../ventMAP 
-    sh anonymize_data.sh 
+    sh anonymize_cohort.sh 
 }
 
 clone_ccil
