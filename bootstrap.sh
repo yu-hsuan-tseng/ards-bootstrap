@@ -24,6 +24,19 @@ clone_ventmap(){
 transfer_data(){
     echo "transferring data from database ..."
     cd ccil_vwd
+    conda env create -f environment.yml
+    conda activate ards
+
+    # install ventparliament
+    cd ..
+    git clone https://github.com/hahnicity/ventparliament.git
+    cd ventparliament
+    conda env update --file environment.yml --name ards
+    pip install -e .
+
+    # go back to ardsdetection code
+    cd ../ccil_vwd
+    
     mkdir -p anon_dataset/experiment1/all_data/raw
     mkdir -p unanon_dataset/experiment1/all_data/raw
     mv ../cohort-description.csv unanon_dataset/
